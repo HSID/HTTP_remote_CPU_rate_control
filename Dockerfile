@@ -1,3 +1,6 @@
-FROM ubuntu
+FROM python:2.7
 MAINTAINER howardsid xuehuajun@aliyun.com
-CMD python ~/HTTP_remote_CPU_rate_control/http_server.py
+WOKRDIR /code
+ADD . /code
+EXPOSE 80
+CMD python http_server.py --port=80

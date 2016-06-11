@@ -1,0 +1,12 @@
+A:
+    build: ./
+    command: python http_server.py --port=80
+    expose:
+        - 80
+B:
+    build: ./
+    command: python http_server.py --port=80
+    expose:
+        - 80
+    links:
+        - A

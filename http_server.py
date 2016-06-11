@@ -6,7 +6,7 @@ import subprocess
 from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
 
 DEFAULT_HOST = '127.0.0.1'
-DEFAULT_PORT = 8800
+DEFAULT_PORT = 80
 
 storedPIDs = []
 
